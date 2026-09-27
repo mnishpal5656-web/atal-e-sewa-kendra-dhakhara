@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Atal E-Sewa Kendra Dhakhara</title>
 
-<meta name="description" content="Atal E-Sewa Kendra Dhakhara - Digital Services and Online Assistance">
-<meta name="keywords" content="Atal E-Sewa Kendra Dhakhara, Dhakhara, Online Services, CSC, Digital Services">
+<meta name="description"
+content="Atal E-Sewa Kendra Dhakhara - Online Government Services">
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Atal E-Sewa Kendra Dhakhara",
-  "alternateName": "Atal E-Sewa Kendra Dhakhara",
-  "url": "https://mnishpal5656-web.github.io/atal-e-sewa-kendra-dhakhara/"
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Atal E-Sewa Kendra Dhakhara",
+  "alternateName":"Atal E-Sewa Kendra Dhakhara",
+  "url":"https://mnishpal5656-web.github.io/atal-e-sewa-kendra-dhakhara/"
 }
 </script>
 
@@ -28,103 +28,176 @@
 
 body{
   font-family:Arial,sans-serif;
-  background:#f4f7fb;
+  background:#eef3f8;
   color:#222;
 }
 
-header{
-  background:linear-gradient(135deg,#075e54,#128c7e);
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#075e54,#00897b,#1565c0);
   color:white;
+  padding:25px 15px;
   text-align:center;
-  padding:28px 15px;
 }
 
-header h1{
+.header h1{
+  font-size:30px;
+  margin-bottom:7px;
+}
+
+.header p{
+  font-size:15px;
+  opacity:.95;
+}
+
+.whatsapp{
+  display:inline-block;
+  margin-top:15px;
+  padding:11px 22px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-weight:bold;
+}
+
+/* DASHBOARD */
+.dashboard{
+  max-width:1150px;
+  margin:auto;
+  padding:20px 15px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.stat{
+  color:white;
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 4px 12px #0002;
+}
+
+.stat:nth-child(1){
+  background:linear-gradient(135deg,#1565c0,#42a5f5);
+}
+
+.stat:nth-child(2){
+  background:linear-gradient(135deg,#00897b,#26a69a);
+}
+
+.stat:nth-child(3){
+  background:linear-gradient(135deg,#ef6c00,#ff9800);
+}
+
+.stat h2{
+  font-size:25px;
+}
+
+/* SEARCH */
+.search{
+  background:white;
+  padding:18px;
+  border-radius:15px;
+  box-shadow:0 3px 12px #0001;
+  margin-bottom:18px;
+}
+
+.search input{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+  outline:none;
+}
+
+/* CATEGORY */
+.categories{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding-bottom:12px;
+  margin-bottom:15px;
+}
+
+.categories button{
+  border:0;
+  background:white;
+  padding:10px 15px;
+  border-radius:20px;
+  white-space:nowrap;
+  box-shadow:0 2px 8px #0002;
+  cursor:pointer;
+}
+
+.categories button:hover{
+  background:#075e54;
+  color:white;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:white;
+  border-radius:16px;
+  padding:18px;
+  text-decoration:none;
+  color:#222;
+  box-shadow:0 3px 12px #0002;
+  border-top:5px solid #00897b;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px #0003;
+}
+
+.icon{
   font-size:30px;
   margin-bottom:8px;
 }
 
-header p{
-  font-size:16px;
+.card h3{
+  font-size:18px;
+  margin-bottom:7px;
 }
 
-.whatsapp-top{
-  display:inline-block;
-  margin-top:15px;
-  background:#25D366;
-  color:white;
-  padding:11px 20px;
-  border-radius:25px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:25px 15px;
-}
-
-.intro{
-  text-align:center;
-  margin-bottom:25px;
-}
-
-.intro h2{
-  color:#075e54;
-  margin-bottom:8px;
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;
-}
-
-.service{
-  background:white;
-  padding:22px 15px;
-  border-radius:15px;
-  text-decoration:none;
-  color:#222;
-  box-shadow:0 3px 12px rgba(0,0,0,.10);
-  transition:.2s;
-  border:1px solid #eee;
-}
-
-.service:hover{
-  transform:translateY(-4px);
-  box-shadow:0 7px 18px rgba(0,0,0,.15);
-}
-
-.service h3{
-  margin-bottom:8px;
-  font-size:19px;
-}
-
-.service p{
+.card p{
+  font-size:13px;
   color:#666;
-  font-size:14px;
-  line-height:1.4;
+  min-height:35px;
 }
 
 .open{
   display:inline-block;
-  margin-top:13px;
+  margin-top:12px;
   background:#075e54;
   color:white;
-  padding:8px 13px;
+  padding:8px 12px;
   border-radius:8px;
-  font-size:13px;
+  font-size:12px;
 }
 
+/* CONTACT */
 .contact{
-  margin-top:30px;
-  background:white;
+  margin-top:25px;
   padding:25px;
+  background:white;
   text-align:center;
-  border-radius:15px;
-  box-shadow:0 3px 12px rgba(0,0,0,.10);
+  border-radius:16px;
+  box-shadow:0 3px 12px #0002;
 }
 
 .contact h2{
@@ -132,33 +205,40 @@ header p{
   margin-bottom:10px;
 }
 
-.whatsapp{
-  display:inline-block;
-  margin-top:15px;
-  background:#25D366;
-  color:white;
-  padding:12px 22px;
-  border-radius:25px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
+/* FOOTER */
 footer{
-  margin-top:30px;
-  background:#075e54;
+  margin-top:25px;
+  background:#063f39;
   color:white;
   text-align:center;
-  padding:18px;
-  font-size:14px;
+  padding:20px;
+  line-height:1.7;
 }
 
-@media(max-width:500px){
-  header h1{
+@media(max-width:600px){
+  .header h1{
     font-size:24px;
   }
 
-  .services{
+  .stats{
     grid-template-columns:1fr;
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .card{
+    padding:13px;
+  }
+
+  .card h3{
+    font-size:15px;
+  }
+
+  .card p{
+    font-size:12px;
   }
 }
 </style>
@@ -166,293 +246,817 @@ footer{
 
 <body>
 
-<header>
+<!-- HEADER -->
+<header class="header">
 
 <h1>Atal E-Sewa Kendra Dhakhara</h1>
 
-<p>Digital Services & Online Assistance</p>
+<p>Online Government Services & Digital Assistance</p>
 
-<a class="whatsapp-top"
+<a class="whatsapp"
 href="https://wa.me/919770977632"
 target="_blank">
-💬 WhatsApp Help
+💬 WhatsApp सहायता
 </a>
 
 </header>
 
 
-<div class="container">
+<main class="dashboard">
 
-<div class="intro">
+<!-- STATS -->
+<div class="stats">
 
-<h2>Our Services</h2>
+<div class="stat">
+<h2>60+</h2>
+<p>Online Services</p>
+</div>
 
-<p>अपनी जरूरत की सेवा पर क्लिक करें</p>
+<div class="stat">
+<h2>24×7</h2>
+<p>Online Information</p>
+</div>
+
+<div class="stat">
+<h2>1 Click</h2>
+<p>Official Websites</p>
+</div>
 
 </div>
 
 
-<div class="services">
+<!-- SEARCH -->
+<div class="search">
+
+<input
+type="text"
+id="search"
+placeholder="🔎 सेवा खोजें जैसे Aadhaar, Kisan, Voter..."
+onkeyup="searchServices()">
+
+</div>
 
 
-<!-- Aadhaar -->
-<a class="service"
+<!-- CATEGORY -->
+<div class="categories">
+
+<button onclick="filterServices('all')">सभी</button>
+<button onclick="filterServices('id')">🪪 पहचान</button>
+<button onclick="filterServices('farmer')">🌾 किसान</button>
+<button onclick="filterServices('education')">🎓 शिक्षा</button>
+<button onclick="filterServices('certificate')">📜 प्रमाणपत्र</button>
+<button onclick="filterServices('job')">💼 रोजगार</button>
+<button onclick="filterServices('scheme')">🏛️ योजनाएँ</button>
+<button onclick="filterServices('other')">⚙️ अन्य</button>
+
+</div>
+
+
+<!-- SERVICES -->
+<div class="services" id="services">
+
+
+<!-- 1 -->
+<a class="card id"
 href="https://www.uidai.gov.in/"
 target="_blank">
-
-<h3>🪪 Aadhaar Services</h3>
-
-<p>Aadhaar related online services</p>
-
+<div class="icon">🪪</div>
+<h3>Aadhaar Services</h3>
+<p>Aadhaar की official services</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- PAN -->
-<a class="service"
+<!-- 2 -->
+<a class="card id"
 href="https://www.incometax.gov.in/iec/foportal/"
 target="_blank">
-
-<h3>💳 PAN Services</h3>
-
-<p>PAN application and related services</p>
-
+<div class="icon">💳</div>
+<h3>PAN Card</h3>
+<p>PAN से संबंधित services</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Ayushman -->
-<a class="service"
-href="https://beneficiary.nha.gov.in/"
-target="_blank">
-
-<h3>🏥 Ayushman Card</h3>
-
-<p>Ayushman card related services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- PM Kisan -->
-<a class="service"
-href="https://pmkisan.gov.in/"
-target="_blank">
-
-<h3>🌾 PM-Kisan</h3>
-
-<p>PM-Kisan registration and services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Certificate -->
-<a class="service"
-href="https://mpedistrict.gov.in/"
-target="_blank">
-
-<h3>📜 Certificates</h3>
-
-<p>Online certificate related services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Scholarship -->
-<a class="service"
-href="https://scholarshipportal.mp.nic.in/"
-target="_blank">
-
-<h3>🎓 Scholarship</h3>
-
-<p>Scholarship form and online services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Employment -->
-<a class="service"
-href="https://www.ncs.gov.in/"
-target="_blank">
-
-<h3>💼 Employment</h3>
-
-<p>Employment and job related services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- e-Shram -->
-<a class="service"
-href="https://eshram.gov.in/"
-target="_blank">
-
-<h3>👷 e-Shram</h3>
-
-<p>e-Shram registration and services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Voter -->
-<a class="service"
+<!-- 3 -->
+<a class="card id"
 href="https://voters.eci.gov.in/"
 target="_blank">
-
-<h3>🗳️ Voter Services</h3>
-
-<p>Voter registration and related services</p>
-
+<div class="icon">🗳️</div>
+<h3>Voter ID</h3>
+<p>Voter registration और services</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Online Forms -->
-<a class="service"
+<!-- 4 -->
+<a class="card id"
+href="https://www.digilocker.gov.in/"
+target="_blank">
+<div class="icon">🔐</div>
+<h3>DigiLocker</h3>
+<p>Digital documents और certificates</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 5 -->
+<a class="card id"
 href="https://www.india.gov.in/"
 target="_blank">
-
-<h3>📝 Online Forms</h3>
-
-<p>Government online forms and services</p>
-
+<div class="icon">🪪</div>
+<h3>Other ID Services</h3>
+<p>सरकारी पहचान संबंधी सेवाएँ</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Farmer -->
-<a class="service"
+<!-- 6 -->
+<a class="card farmer"
 href="https://pmkisan.gov.in/"
 target="_blank">
-
-<h3>🚜 Farmer Services</h3>
-
-<p>Farmer registration and online services</p>
-
+<div class="icon">🌾</div>
+<h3>PM-Kisan</h3>
+<p>PM-Kisan registration और status</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Khasra Khatauni -->
-<a class="service"
-href="https://mpbhulekh.gov.in/"
+<!-- 7 -->
+<a class="card farmer"
+href="https://pmkisan.gov.in/"
 target="_blank">
-
-<h3>📑 Khasra-Khatauni</h3>
-
-<p>MP land record related services</p>
-
+<div class="icon">🚜</div>
+<h3>Farmer Services</h3>
+<p>किसान से संबंधित सरकारी services</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Samagra -->
-<a class="service"
-href="https://samagra.gov.in/"
+<!-- 8 -->
+<a class="card farmer"
+href="https://pmfby.gov.in/"
 target="_blank">
-
-<h3>🔐 Samagra KYC</h3>
-
-<p>Samagra and online KYC services</p>
-
+<div class="icon">🌱</div>
+<h3>Crop Insurance</h3>
+<p>प्रधानमंत्री फसल बीमा योजना</p>
 <span class="open">Official Website →</span>
-
 </a>
 
 
-<!-- Banking -->
-<a class="service"
-href="https://www.jansuraksha.gov.in/"
-target="_blank">
-
-<h3>🏦 Banking Assistance</h3>
-
-<p>Digital banking and financial services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Digital India -->
-<a class="service"
-href="https://www.digitalindia.gov.in/"
-target="_blank">
-
-<h3>💻 Digital Services</h3>
-
-<p>Various digital government services</p>
-
-<span class="open">Official Website →</span>
-
-</a>
-
-
-<!-- Other -->
-<a class="service"
+<!-- 9 -->
+<a class="card farmer"
 href="https://www.india.gov.in/"
 target="_blank">
-
-<h3>⚙️ Other Services</h3>
-
-<p>Other online government services</p>
-
+<div class="icon">🌾</div>
+<h3>Kisan Schemes</h3>
+<p>किसान योजनाओं की जानकारी</p>
 <span class="open">Official Website →</span>
+</a>
 
+
+<!-- 10 -->
+<a class="card farmer"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🚜</div>
+<h3>Kisan Registration</h3>
+<p>किसान पंजीयन संबंधी services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 11 -->
+<a class="card farmer"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🌽</div>
+<h3>Crop Services</h3>
+<p>फसल संबंधी सरकारी services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 12 -->
+<a class="card farmer"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">📋</div>
+<h3>Crop Registration</h3>
+<p>फसल पंजीयन संबंधी जानकारी</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 13 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">📜</div>
+<h3>e-District MP</h3>
+<p>मध्य प्रदेश की e-District services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 14 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">📜</div>
+<h3>Income Certificate</h3>
+<p>आय प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 15 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">📜</div>
+<h3>Caste Certificate</h3>
+<p>जाति प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 16 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">🏠</div>
+<h3>Residence Certificate</h3>
+<p>निवास प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 17 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">👶</div>
+<h3>Birth Certificate</h3>
+<p>जन्म प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 18 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">⚰️</div>
+<h3>Death Certificate</h3>
+<p>मृत्यु प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 19 -->
+<a class="card certificate"
+href="https://mpedistrict.gov.in/"
+target="_blank">
+<div class="icon">💍</div>
+<h3>Marriage Certificate</h3>
+<p>विवाह प्रमाणपत्र services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 20 -->
+<a class="card certificate"
+href="https://mpbhulekh.gov.in/"
+target="_blank">
+<div class="icon">📑</div>
+<h3>Khasra-Khatauni</h3>
+<p>MP land records</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 21 -->
+<a class="card certificate"
+href="https://mpbhulekh.gov.in/"
+target="_blank">
+<div class="icon">🗺️</div>
+<h3>Bhu-Naksha</h3>
+<p>भूमि नक्शा services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 22 -->
+<a class="card certificate"
+href="https://mpbhulekh.gov.in/"
+target="_blank">
+<div class="icon">🏞️</div>
+<h3>Land Records</h3>
+<p>भूमि रिकॉर्ड जानकारी</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 23 -->
+<a class="card education"
+href="https://scholarshipportal.mp.nic.in/"
+target="_blank">
+<div class="icon">🎓</div>
+<h3>Scholarship</h3>
+<p>MP scholarship services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 24 -->
+<a class="card education"
+href="https://shikshaportal.mp.gov.in/"
+target="_blank">
+<div class="icon">📚</div>
+<h3>Shiksha Portal</h3>
+<p>School education services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 25 -->
+<a class="card education"
+href="https://epravesh.highereducation.mp.gov.in/"
+target="_blank">
+<div class="icon">🏫</div>
+<h3>e-Pravesh</h3>
+<p>Higher education admission</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 26 -->
+<a class="card education"
+href="https://www.digilocker.gov.in/"
+target="_blank">
+<div class="icon">📄</div>
+<h3>Digital Documents</h3>
+<p>Digital educational documents</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 27 -->
+<a class="card education"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🎓</div>
+<h3>Education Services</h3>
+<p>सरकारी शिक्षा services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 28 -->
+<a class="card education"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">📖</div>
+<h3>Student Services</h3>
+<p>विद्यार्थी सेवाएँ</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 29 -->
+<a class="card education"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">📝</div>
+<h3>Online Admission</h3>
+<p>Admission related services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 30 -->
+<a class="card education"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🏆</div>
+<h3>Exam Services</h3>
+<p>परीक्षा संबंधी services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 31 -->
+<a class="card job"
+href="https://www.ncs.gov.in/"
+target="_blank">
+<div class="icon">💼</div>
+<h3>National Career Service</h3>
+<p>Job और employment services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 32 -->
+<a class="card job"
+href="https://www.ncs.gov.in/"
+target="_blank">
+<div class="icon">👨‍💼</div>
+<h3>Job Registration</h3>
+<p>रोजगार registration</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 33 -->
+<a class="card job"
+href="https://www.ncs.gov.in/"
+target="_blank">
+<div class="icon">🔎</div>
+<h3>Job Search</h3>
+<p>सरकारी और private jobs खोजें</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 34 -->
+<a class="card job"
+href="https://eshram.gov.in/"
+target="_blank">
+<div class="icon">👷</div>
+<h3>e-Shram</h3>
+<p>Unorganised workers registration</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 35 -->
+<a class="card job"
+href="https://nrega.nic.in/"
+target="_blank">
+<div class="icon">🧑‍🌾</div>
+<h3>MGNREGA</h3>
+<p>मनरेगा संबंधी services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 36 -->
+<a class="card job"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🪪</div>
+<h3>Labour Services</h3>
+<p>श्रमिक services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 37 -->
+<a class="card scheme"
+href="https://beneficiary.nha.gov.in/"
+target="_blank">
+<div class="icon">🏥</div>
+<h3>Ayushman Card</h3>
+<p>Ayushman Bharat services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 38 -->
+<a class="card scheme"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🏛️</div>
+<h3>Government Schemes</h3>
+<p>सरकारी योजनाओं की जानकारी</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 39 -->
+<a class="card scheme"
+href="https://www.myscheme.gov.in/"
+target="_blank">
+<div class="icon">🔍</div>
+<h3>myScheme</h3>
+<p>अपनी पात्र सरकारी योजना खोजें</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 40 -->
+<a class="card scheme"
+href="https://cmhelpline.mp.gov.in/entitleDashboard.aspx"
+target="_blank">
+<div class="icon">📋</div>
+<h3>MP Scheme Dashboard</h3>
+<p>MP सरकारी योजनाओं की जानकारी</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 41 -->
+<a class="card scheme"
+href="https://cmhelpline.mp.gov.in/"
+target="_blank">
+<div class="icon">☎️</div>
+<h3>CM Helpline</h3>
+<p>मध्य प्रदेश शिकायत service</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 42 -->
+<a class="card scheme"
+href="https://www.umang.gov.in/"
+target="_blank">
+<div class="icon">📱</div>
+<h3>UMANG</h3>
+<p>कई सरकारी services एक जगह</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 43 -->
+<a class="card scheme"
+href="https://services.india.gov.in/"
+target="_blank">
+<div class="icon">🇮🇳</div>
+<h3>National Services Portal</h3>
+<p>भारत सरकार की online services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 44 -->
+<a class="card scheme"
+href="https://epramaan.gov.in/"
+target="_blank">
+<div class="icon">🔐</div>
+<h3>e-Pramaan</h3>
+<p>Government digital authentication</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 45 -->
+<a class="card scheme"
+href="https://www.jansuraksha.gov.in/"
+target="_blank">
+<div class="icon">🛡️</div>
+<h3>Jan Suraksha</h3>
+<p>Social security schemes</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 46 -->
+<a class="card other"
+href="https://parivahan.gov.in/"
+target="_blank">
+<div class="icon">🚗</div>
+<h3>Driving Licence</h3>
+<p>Driving licence services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 47 -->
+<a class="card other"
+href="https://parivahan.gov.in/"
+target="_blank">
+<div class="icon">🚘</div>
+<h3>Vehicle Services</h3>
+<p>Vehicle related services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 48 -->
+<a class="card other"
+href="https://www.passportindia.gov.in/"
+target="_blank">
+<div class="icon">🛂</div>
+<h3>Passport</h3>
+<p>Passport application services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 49 -->
+<a class="card other"
+href="https://www.irctc.co.in/"
+target="_blank">
+<div class="icon">🚆</div>
+<h3>Railway Ticket</h3>
+<p>IRCTC official website</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 50 -->
+<a class="card other"
+href="https://www.indiapost.gov.in/"
+target="_blank">
+<div class="icon">📮</div>
+<h3>India Post</h3>
+<p>Post office online services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 51 -->
+<a class="card other"
+href="https://www.epfindia.gov.in/"
+target="_blank">
+<div class="icon">💰</div>
+<h3>EPFO</h3>
+<p>PF related services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 52 -->
+<a class="card other"
+href="https://www.esic.gov.in/"
+target="_blank">
+<div class="icon">🏥</div>
+<h3>ESIC</h3>
+<p>Employee health services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 53 -->
+<a class="card other"
+href="https://www.incometax.gov.in/"
+target="_blank">
+<div class="icon">💵</div>
+<h3>Income Tax</h3>
+<p>Income tax services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 54 -->
+<a class="card other"
+href="https://www.gst.gov.in/"
+target="_blank">
+<div class="icon">🧾</div>
+<h3>GST</h3>
+<p>GST portal services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 55 -->
+<a class="card other"
+href="https://www.udyamregistration.gov.in/"
+target="_blank">
+<div class="icon">🏪</div>
+<h3>Udyam Registration</h3>
+<p>MSME registration</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 56 -->
+<a class="card other"
+href="https://www.npci.org.in/"
+target="_blank">
+<div class="icon">💳</div>
+<h3>Digital Payments</h3>
+<p>Digital payment information</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 57 -->
+<a class="card other"
+href="https://www.epds.nic.in/"
+target="_blank">
+<div class="icon">🍚</div>
+<h3>Ration Services</h3>
+<p>Public distribution services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 58 -->
+<a class="card other"
+href="https://www.eprocure.gov.in/"
+target="_blank">
+<div class="icon">📦</div>
+<h3>e-Procurement</h3>
+<p>Government tender services</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 59 -->
+<a class="card other"
+href="https://www.indiacode.nic.in/"
+target="_blank">
+<div class="icon">⚖️</div>
+<h3>India Code</h3>
+<p>Central laws and acts</p>
+<span class="open">Official Website →</span>
+</a>
+
+
+<!-- 60 -->
+<a class="card other"
+href="https://www.india.gov.in/"
+target="_blank">
+<div class="icon">🌐</div>
+<h3>All Government Services</h3>
+<p>भारत सरकार की अन्य services</p>
+<span class="open">Official Website →</span>
 </a>
 
 
 </div>
 
 
+<!-- CONTACT -->
 <div class="contact">
 
-<h2>Contact Atal E-Sewa Kendra Dhakhara</h2>
+<h2>Atal E-Sewa Kendra Dhakhara</h2>
 
-<p><strong>Amol Singh</strong></p>
+<p>Online Government Services & Digital Assistance</p>
 
-<p>Online Services & Digital Assistance</p>
+<p style="margin-top:8px;">
+📱 WhatsApp: <strong>9770977632</strong>
+</p>
 
 <a class="whatsapp"
 href="https://wa.me/919770977632"
 target="_blank">
-
-💬 WhatsApp पर संपर्क करें
-
+💬 WhatsApp पर सहायता लें
 </a>
 
-<p style="margin-top:10px;">
-📱 9770977632
-</p>
-
 </div>
 
-</div>
+</main>
 
 
 <footer>
 
 © 2026 Atal E-Sewa Kendra Dhakhara<br>
-Digital Services & Online Assistance
+Online Government Services & Digital Assistance
 
 </footer>
 
+
+<script>
+
+function searchServices(){
+
+let input =
+document.getElementById("search").value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let text =
+card.innerText.toLowerCase();
+
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+
+function filterServices(category){
+
+let cards =
+document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(category==="all"){
+card.style.display="block";
+}
+else if(card.classList.contains(category)){
+card.style.display="block";
+}
+else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
+
 </body>
-</html>
+  </html>
